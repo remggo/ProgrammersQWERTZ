@@ -52,54 +52,54 @@
 ; Reihe 2
 
 VK09SC00F::goto neo_tab
-*VK51SC010:: ; q (q)
-  goto neo_q
-*VK57SC011:: ; w (w)
+*VK51SC010:: ; q (x)
+  goto neo_x
+*VK57SC011:: ; w (v)
+  goto neo_v
+*VK45SC012:: ; e (l)
+  goto neo_l
+*VK52SC013:: ; r (c)
+  goto neo_c
+*VK54SC014:: ; t (w)
   goto neo_w
-*VK45SC012:: ; e (e)
-  goto neo_e
-*VK52SC013:: ; r (r)
-  goto neo_r
-*VK54SC014:: ; t (t)
-  goto neo_t
-*VK5ASC015:: ; z (z) 
+*VK5ASC015:: ; z (k) 
   if !einHandNeo or !spacepressed
-    goto neo_z
+    goto neo_k
   else {
     keypressed := 1
     goto %gespiegelt_k%
   }
-*VK55SC016:: ; u (u)
+*VK55SC016:: ; u (h)
   if !einHandNeo or !spacepressed
-    goto neo_u
+    goto neo_h
   else {
     keypressed := 1
     goto %gespiegelt_h%
   }
-*VK49SC017:: ; i (i)
+*VK49SC017:: ; i (g)
   if !einHandNeo or !spacepressed
-    goto neo_i
+    goto neo_g
   else {
     keypressed := 1
     goto %gespiegelt_g%
   }
-*VK4FSC018:: ; o (o)
+*VK4FSC018:: ; o (f)
   if !einHandNeo or !spacepressed
-    goto neo_o
+    goto neo_f
   else {
     keypressed := 1
     goto %gespiegelt_f%
   }
-*VK50SC019:: ; p (p)
+*VK50SC019:: ; p (q)
   if !einHandNeo or !spacepressed
-    goto neo_p
+    goto neo_q
   else {
     keypressed := 1
     goto %gespiegelt_q%
   }
-*VKBASC01A:: ; ü (ü)
+*VKBASC01A:: ; ü (ß)
   if !einHandNeo or !spacepressed
-    goto neo_ü
+    goto neo_sz
   else {
     keypressed := 1
     goto %gespiegelt_sz%
@@ -113,68 +113,68 @@ VK09SC00F::goto neo_tab
   }
 
 ; Reihe 3
-*VK41SC01E:: ; a (a)
+*VK41SC01E:: ; a (u)
+  goto neo_u
+*VK53SC01F:: ; s (i)
+  goto neo_i
+*VK44SC020:: ; d (a)
   goto neo_a
-*VK53SC01F:: ; s (s)
-  goto neo_s
-*VK44SC020:: ; d (d)
-  goto neo_d
-*VK46SC021:: ; f (f)
-  goto neo_f
-*VK47SC022:: ; g (g)
-  goto neo_g
-*VK48SC023:: ; h (h)
+*VK46SC021:: ; f (e)
+  goto neo_e
+*VK47SC022:: ; g (o)
+  goto neo_o
+*VK48SC023:: ; h (s)
   if !einHandNeo or !spacepressed
-    goto neo_h
+    goto neo_s
   else {
     keypressed := 1
     goto %gespiegelt_s%
   }
-*VK4ASC024:: ; j (j)
+*VK4ASC024:: ; j (n)
   if !einHandNeo or !spacepressed
-    goto neo_j
+    goto neo_n
   else {
     keypressed := 1
     goto %gespiegelt_n%
   }
-*VK4BSC025:: ; k (k)
+*VK4BSC025:: ; k (r)
   if !einHandNeo or !spacepressed
-    goto neo_k
+    goto neo_r
   else {
     keypressed := 1
     goto %gespiegelt_r%
   }
-*VK4CSC026:: ; l (l)
+*VK4CSC026:: ; l (t)
   if !einHandNeo or !spacepressed
-    goto neo_l
+    goto neo_t
   else {
     keypressed := 1
     goto %gespiegelt_t%
   }
-*VKC0SC027:: ; ö (ö)
+*VKC0SC027:: ; ö (d)
   if !einHandNeo or !spacepressed
-    goto neo_ö
+    goto neo_d
   else {
     keypressed := 1
     goto %gespiegelt_d%
   }
-*VKDESC028:: ; ä (ä)
-    goto neo_ä
+*VKDESC028:: ; ä (y)
+    goto neo_y
 
 ; Reihe 4
-*VK59SC02C:: ; y (y)
-  goto neo_y
-*VK58SC02D:: ; x (x)
-  goto neo_x
-*VK43SC02E:: ; c (c)  
-  goto neo_c
-*VK56SC02F:: ; v (v)
-  goto neo_v
-*VK42SC030:: ; b (b)
-  goto neo_b
-*VK4ESC031:: ; n (n)
+*VK59SC02C:: ; y (ü)
+  goto neo_ü
+*VK58SC02D:: ; x (ö)
+  goto neo_ö
+*VK43SC02E:: ; c (ä)  
+  goto neo_ä
+*VK56SC02F:: ; v (p)
+  goto neo_p
+*VK42SC030:: ; b (z)
+  goto neo_z
+*VK4ESC031:: ; n (b)
   if !einHandNeo or !spacepressed
-    goto neo_n
+    goto neo_b
   else {
     keypressed := 1
     goto %gespiegelt_b%
@@ -200,9 +200,9 @@ VK09SC00F::goto neo_tab
     keypressed := 1
     goto %gespiegelt_punkt%
   }
-*VKBDSC035:: ; - (-)
+*VKBDSC035:: ; - (j)
   if !einHandNeo or !spacepressed
-    goto neo_strich
+    goto neo_j
   else {
     keypressed := 1
     goto %gespiegelt_j%

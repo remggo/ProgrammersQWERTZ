@@ -6,7 +6,7 @@ set ahk=C:\Programme\AutoHotkey
 REM The path to the authohotkey directory in the local svn copy:
 set svn=.
 REM The filename of the joined script:
-set fn=neo20
+set fn=proQWERTZ
 
 rem echo Killing the old (AHK)Driver
 rem tskill %fn%

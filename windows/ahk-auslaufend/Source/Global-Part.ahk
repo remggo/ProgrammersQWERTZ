@@ -17,7 +17,7 @@ KeyboardLED(4, "off")
 SetNumLockState Off
 SetScrollLockState Off
 
-name=Neo 2.0 (%A_ScriptName%) ($Revision$)
+name=ProgrammersQWERTZ (%A_ScriptName%)
 enable=Aktiviere %name%
 disable=Deaktiviere %name%
 #usehook on

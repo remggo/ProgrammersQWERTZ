@@ -38,7 +38,7 @@ neo_strich:
   noCaps = 1
   EbeneAktualisieren()
   if (Ebene = 1)
-    OutputChar("-", "minus") ; Bindestrich-Minus
+    OutputChar("ß", "ssharp") ; Bindestrich-Minus
   else if (Ebene = 2)
     SendUnicodeChar(0x2013, "endash") ; Gedankenstrich
   else if (Ebene = 3)
