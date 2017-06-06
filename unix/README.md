@@ -1,5 +1,6 @@
 # How to
-Append contents of de file to /usr/share/X11/xkb/symbols/de
+Append contents of de file to 
+`/usr/share/X11/xkb/symbols/de`
 
 Add in contents of file xmlChanges.xml to following files:
 * `/usr/share/X11/xkb/rules/base.xml`
