@@ -1,21 +1,32 @@
+From 9332c85fd1c090e72f0e0bdaa6e3baff77e14e94 Mon Sep 17 00:00:00 2001
+From: Root Root <root@root.com>
+Date: Sat, 30 Nov 2019 19:46:10 +0100
+Subject: [PATCH] Patched in MyNeo
+
+---
+ rules/base.xml  |   8 +++-
+ rules/evdev.xml |   8 +++-
+ symbols/de      | 123 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 137 insertions(+), 2 deletions(-)
+
 diff --git a/rules/base.xml b/rules/base.xml
-index 095eaf1..47e58f3 100644
+index 1fc0058..d374622 100644
 --- a/rules/base.xml
 +++ b/rules/base.xml
-@@ -3371,6 +3371,12 @@
+@@ -3515,6 +3515,12 @@
          </languageList>
        </configItem>
        <variantList>
-+        <variant>
-+          <configItem>
-+	          <name>myneo</name>
-+	          <description>German (MyNeo)</description>
-+          </configItem>
-+        </variant>
++<variant>
++  <configItem>
++	<name>myneo</name>
++	<description>German (MyNeo)</description>
++  </configItem>
++</variant>
          <variant>
            <configItem>
              <name>deadacute</name>
-@@ -7259,4 +7265,4 @@
+@@ -7577,4 +7583,4 @@
        </option>
      </group>
    </optionList>
@@ -23,23 +34,23 @@ index 095eaf1..47e58f3 100644
 \ No newline at end of file
 +</xkbConfigRegistry>
 diff --git a/rules/evdev.xml b/rules/evdev.xml
-index 095eaf1..47e58f3 100644
+index 1fc0058..d374622 100644
 --- a/rules/evdev.xml
 +++ b/rules/evdev.xml
-@@ -3371,6 +3371,12 @@
+@@ -3515,6 +3515,12 @@
          </languageList>
        </configItem>
        <variantList>
-+        <variant>
-+          <configItem>
-+	          <name>myneo</name>
-+	          <description>German (MyNeo)</description>
-+          </configItem>
-+        </variant>
++<variant>
++  <configItem>
++	<name>myneo</name>
++	<description>German (MyNeo)</description>
++  </configItem>
++</variant>
          <variant>
            <configItem>
              <name>deadacute</name>
-@@ -7259,4 +7265,4 @@
+@@ -7577,4 +7583,4 @@
        </option>
      </group>
    </optionList>
@@ -47,13 +58,14 @@ index 095eaf1..47e58f3 100644
 \ No newline at end of file
 +</xkbConfigRegistry>
 diff --git a/symbols/de b/symbols/de
-index c025a1c..bbab071 100644
+index a96671b..7fac89d 100644
 --- a/symbols/de
 +++ b/symbols/de
-@@ -1151,3 +1151,125 @@ partial alphanumeric_keys
+@@ -1151,3 +1151,126 @@ partial alphanumeric_keys
      key <AD10> { [ p, P, ediaeresis, Ediaeresis ] };
  
  };
++
 +partial alphanumeric_keys modifier_keys keypad_keys
 +xkb_symbols "myneo" {
 +
@@ -176,4 +188,6 @@ index c025a1c..bbab071 100644
 +    include "level5(lsgt_switch)"
 +    include "level5(ralt_switch)"
 +};
-\ No newline at end of file
+-- 
+2.24.0
+
